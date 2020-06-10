@@ -129,7 +129,7 @@
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <div class="icon"><i class='bx bx-like'></i></div>
               <h4><a href="">Mudah digunakan</a></h4>
               <p>Cukup dengan isi email dan password untuk melakukan mengecekan</p>
             </div>
@@ -153,7 +153,7 @@
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
+              <div class="icon"><i class='bx bx-lock'></i></div>
               <h4><a href="">Rahasia</a></h4>
               <p>Data yang dikirim akan dienkripsi jadi membuat aman & rahasia</p>
             </div>
@@ -278,7 +278,7 @@
       if (testEmail.test(email)){
         $('#btn-cancel').hide();
         $('#btn-check').attr('disabled', true);
-        $('#btn-check').html('Please Wait');
+        $('#btn-check').html("<span>Please wait </span><i class='bx bx-analyse bx-spin'></i>");
       } else {
         swal("Error", "Format email salah", "error");
         return false;
